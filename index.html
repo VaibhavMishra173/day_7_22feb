@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="prev">
+            <span class="prevbtn">&#8701;</span>
+        </div>
+        <div class="title">
+            <span>United Well-Being Foundation</span>
+        </div>
+    </div>
+    <div class="contr">
+        <div class="logo">
+            <img class="logoimg" src="logo.png" alt="logo">
+        </div>
+    </div>
+    <div class="frmcnt">
+        <div class="frm_h">
+            <p class="frmt">Need Help? We got you!</p>
+        </div> 
+        <div class="form">
+            <form action="#">
+                <p class="frm_m">&#x2605; We assure you that any information you enter will be treated confidentially.
+                    Everyone who works in this organisation adheres to our privacy policy. So don't worry, your
+                    information
+                    is secure with us.
+                </p>
+                <div class="view">
+                    <div id="user_input" class="flex">
+                        <input type="text" id="name" required>
+                        <div id="underline"></div>
+                        <label>Name <span class="star">*</span></label>
+                    </div>
+                    <div id="user_input" class="flex">
+                        <input type="tel" id="phone" minlength="10" maxlength="10" required>
+                        <div id="underline"></div>
+                        <label>Mobile No. <span class="star">*</span></label>
+                    </div>
+                    <div id="user_input" class="flex">
+                        <input type="email" id="email" required>
+                        <div id="underline"></div>
+                        <label>Email ID <span class="star">*</span></label>
+                    </div>
+                    <div id="user_input" class="flex">
+                        <input type="number" id="age" required>
+                        <div id="underline"></div>
+                        <label>Age <span class="star">*</span></label>
+                    </div>
+                    <div id="user_input" class="flex">
+                        <input type="text" id="residence" required>
+                        <div id="underline"></div>
+                        <label>City of Residence <span class="star">*</span></label>
+                    </div>
+                    <div id="user_input" class="flex">
+                        <input type="text" required>
+                        <div id="underline"></div>
+                        <label>Education/Occupation </label>
+                    </div>
+                </div>
+                <!-- changed id here  -->
+                <div id="user" class="flex">
+                    <label>Gender <span class="star">*</span></label><br>
+                    <input type="radio" id="gender" name="gender" value="Male" required>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="gender" name="gender" value="Female" required>
+                    <label for="Female">Female</label>
+                    <input type="radio" id="gender" name="gender" value="LGBTQIA" required>
+                    <label for="LGBTQIA">LGBTQIA</label>
+                </div>
+                <div id="user_input" class="flex">
+                    <input type="text" required>
+                    <div id="underline"></div>
+                    <label>What brought you here? <span class="star">*</span></label>
+                </div>
+                <div id="user_input" class="flex">
+                    <input type="text" required>
+                    <div id="underline"></div>
+                    <label>Describe the situation <span class="star">*</span></label>
+                </div>
+                <!-- changed id here -->
+                <div id="user" class="flex">
+                    <label>How you been to therapy before or tried any other alternatives? <span
+                            class="star">*</span></label><br>
+                    <input type="radio" id="alternatives" name="alternatives" value="Yes" required>
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="alternatives" name="alternatives" value="No" required>
+                    <label for="No">No</label>
+                </div>
+                <!-- changed id here -->
+                <div id="user" class="flex">
+                    <label>How you ever had any suicidal thoughts? <span class="star">*</span></label><br>
+                    <input type="radio" id="suicidal_tht" name="suicidal_tht" value="Yes" required>
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="suicidal_tht" name="suicidal_tht" value="No" required>
+                    <label for="No">No</label>
+                </div>
+                <!-- changed id here -->
+                <div id="user" class="flex">
+                    <label>Preffered Languange? <span class="star">*</span></label><br>
+                    <input type="radio" id="lang" name="lang" value="Hindi" required>
+                    <label for="Hindi">Hindi</label>
+                    <input type="radio" id="lang" name="lang" value="English" required>
+                    <label for="English">English</label>
+                    <input type="radio" id="lang" name="lang" value="Punjabi" required>
+                    <label for="Punjabi">Punjabi</label>
+                    <input type="radio" id="lang" name="lang" value="Gujarati" required>
+                    <label for="Gujarati">Gujarati</label>
+                    <input type="radio" id="lang" name="lang" value="Kutchi" required>
+                    <label for="Kutchi">Kutchi</label>
+                </div>
+                <div id="user_input" class="flex">
+                    <input type="text" required>
+                    <div id="underline"></div>
+                    <label>Emergency Contact Number <span class="star">*</span></label>
+                </div>
+                <div id="sub_btn">
+                    <input type="button" class="btn" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
