@@ -71,20 +71,9 @@ body {
     .frm_m {
         margin-top: 2%;
     }
-    .frmt {
-        font-size: 30px;
-    }
 }
-@media screen and (max-width: 425px) {
-    .frmt {
-        font-size: 20px;
-    }
-}
-
-
 
 .frmcnt {
-    /* position: relative; */
     margin-bottom: 45px;
     width: 85%;
     margin-top: 8%;
@@ -100,7 +89,7 @@ body {
     margin-top: -1%;
     margin-left: 150px;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 29px;
     line-height: 41px;
     color: #4B4B4B;
 }
@@ -124,52 +113,52 @@ body {
     color: #848484;
 }
 
+.view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.des {
+    margin-right: 24%;
+}
 
-
-
-
-
-
-
-
-
-
-#user {
+#btn {
     margin-top: 1.8em;
     position: relative;
 }
-#user>input{
+.btn_inp {
     position: relative;
     padding: 0.5em;
     font-size: 1.2em;
     background: none;
     margin-top: 1em;
 }
-#user>label{
+
+.btn_lbl {
     font-size: 17px;
     color: #848484;
     margin-left: 5px;
 }
 
-
-
-#user_input{
-    margin-top: 2.8em;
-    flex-direction: column;
+#txt{
+    margin-top: 2em;
     position: relative;
 }
-#user_input>input{
+.txt_inp{
     position: relative;
     padding: 0.5em;
     font-size: 1.2em;
     outline: none;
     border: none;
-    width: 60%;
+    width: 195%;
     background: none;
     border-bottom: 3px solid rgb(200, 200, 200);
     z-index: 2;
 }
-#user_input>label{
+.e {
+    width: 40%;
+}
+.txt_lbl{
     font-size: 1.2em;
     color: #848484;
     position: absolute;
@@ -178,28 +167,9 @@ body {
     transition: 0.2s ease-in-out;
     z-index: 1;
 }
-#user_input>input:focus~label,#user_input>input:valid~label{
+.txt_inp:focus~label,.txt_inp:valid~label{
     transform: translateY(-30px);
     color: #3B4A58;
-}
-#underline{
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    width: 60%;
-}
-#underline::before{
-    content: '';    
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #3B4A58;
-    transform: scaleX(0);
-    transition: 0.2s 0.3s ease-in-out;
-    z-index: 3;
-}
-#user_input>input:focus~#underline::before,#user_input>input:valid~#underline::before{
-    transform: scaleX(1);
 }
 
 #sub_btn {
@@ -229,10 +199,108 @@ body {
     .title {
         margin-left: 15%;
     }
-    #user_input>input {
-        width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .txt_inp {
+        width: 90%;
     }
-    #underline{
-        width: 100%;
+    .view {
+        display: flex;
+        flex-direction: column;
+    }
+    .des {
+        margin-right: 0%;
     }
 }
+/* @media screen and (min-width: 1050px) {
+    .txt_inp {
+        width: 200%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.multiselect {
+    width: 100%;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    width: 40%;
+    background: none;
+    border-bottom: 3px solid rgb(200, 200, 200);
+    width: 100%;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #mySelectOptions {
+    display: none;
+    border: 0.5px #7c7c7c solid;
+    background-color: #ffffff;
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  
+  #mySelectOptions label {
+    display: block;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    background-color: #ffffff00;
+    padding: 0 2.25rem 0 .75rem;
+    padding: .375rem 2.25rem .375rem .75rem;
+  }
+  
+  #mySelectOptions label:hover {
+    background-color: #1e90ff;
+  }
+  #mySelectOption {
+    display: none;
+    border: 0.5px #7c7c7c solid;
+    background-color: #ffffff;
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  
+  #mySelectOption label {
+    display: block;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    background-color: #ffffff00;
+    padding: 0 2.25rem 0 .75rem;
+    padding: .375rem 2.25rem .375rem .75rem;
+  }
+  
+  #mySelectOption label:hover {
+    background-color: #1e90ff;
+  }
